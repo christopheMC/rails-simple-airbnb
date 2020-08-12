@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-12">
       <h1>All our flats (<%= @flats.count %>)</h1>
-      <div class="d-flex justify-content-around flex-wrap present">
+      <div class="d-flex justify-content-start flex-wrap present">
         <% @flats.each do |flat| %>
           <%= link_to flat_path(flat) do %>
             <div class="card">
